@@ -5,7 +5,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/errMessage"
@@ -104,7 +105,8 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:textColor="@color/green"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/deviceMsgDisconnect"
@@ -114,7 +116,8 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:textColor="@color/green"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:gravity="center"/>
 
         <Button
             android:id="@+id/destroy_connect_btn"
@@ -142,7 +145,8 @@
             android:layout_marginBottom="25dp"
             android:textColor="@color/black"
             android:textSize="18dp"
-            android:textStyle="normal" />
+            android:textStyle="normal"
+            android:gravity="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"
