@@ -27,7 +27,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:text="Các thiết bị đã ghép đôi"
+            android:text="Thiết bị có thể ghép đôi"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
@@ -134,6 +134,19 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:text="Đổi chế độ" />
+
+        <TextView
+            android:id="@+id/txtCurrentStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:text="Điều khiển bằng tay" />
 
         <TextView
             android:id="@+id/txtSpeechInput"
@@ -246,6 +259,12 @@
             </TableRow>
 
         </TableLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
 
     </LinearLayout>
 </ScrollView>

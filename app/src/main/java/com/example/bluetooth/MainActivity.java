@@ -106,6 +106,7 @@ public class MainActivity extends Activity {
         Button btn5 = (Button)findViewById(R.id.btn5);
         Button btn6 = (Button)findViewById(R.id.btn6);
         TextView errMessage = (TextView)findViewById(R.id.errMessage);
+        TextView currentStatus = (TextView)findViewById(R.id.txtCurrentStatus);
         TextView deviceMessage = (TextView)findViewById(R.id.deviceMessage);
         TextView deviceMsgDisconnect = (TextView)findViewById(R.id.deviceMsgDisconnect);
         Button destroyConnectBtn = (Button)findViewById(R.id.destroy_connect_btn);
@@ -261,7 +262,14 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 try {
+                    if(currentStatus.getText().toString().contains("tay") ) {
+                        currentStatus.setText("Di chuyển tự động");
+                    }
+                    else {
+                        currentStatus.setText("Điều khiển bằng tay");
+                    }
                     setOutputStream('c');
+
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
